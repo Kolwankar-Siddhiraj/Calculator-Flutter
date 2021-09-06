@@ -57,15 +57,15 @@ class _developer_information_pageState
   // method for sending mails starts here
 
   sendMail() async {
-    String _username = 'sidsflutterapps@gmail.com';
-    String _password = '@@helloworld022003';
+    String _username = 'sample@gmail.com';
+    String _password = 'password';
 
     final smtpServer = gmail(_username, _password);
     final message = Message()
       ..from = Address(_username, 'Calculator')
       //..recipients.add('siddhirajk77@gmail.com')
       ..ccRecipients
-          .addAll(['sidsflutterapps@gmail.com', 'siddhirajk77@gmail.com'])
+          .addAll(['sample_1@gmail.com', 'sample_2@gmail.com'])
       //..bccRecipients.add(Address('bccAddress@example.com'))
       ..subject = _subject_for_email //'${DateTime.now()}'
       ..text = _body_of_email;
