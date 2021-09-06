@@ -63,7 +63,7 @@ class _developer_information_pageState
     final smtpServer = gmail(_username, _password);
     final message = Message()
       ..from = Address(_username, 'Calculator')
-      //..recipients.add('siddhirajk77@gmail.com')
+      //..recipients.add('sample_1@gmail.com')
       ..ccRecipients
           .addAll(['sample_1@gmail.com', 'sample_2@gmail.com'])
       //..bccRecipients.add(Address('bccAddress@example.com'))
